@@ -6,9 +6,14 @@ const contactTypes = useContactTypes()
 </script>
 
 <template>
-  <button onclick="merchantContacts.showModal()" class="btn bg-orange-500 hover:bg-orange-400 btn-sm rounded-md">
+  <!-- <button onclick="merchantContacts.showModal()" class="btn bg-orange-500 hover:bg-orange-400 btn-sm rounded-md">
     <span class="text-white font-bold">{{ $t('Contact_Merchant') }}</span>
+  </button> -->
+
+  <button class="btn bg-orange-500 hover:bg-orange-400 btn-sm rounded-md">
+    <a target="_blank" href = 'https://t.me/Victoriawvv' class="text-white font-bold">{{ $t('Contact_Merchant') }}</a>
   </button>
+
   <dialog id="merchantContacts" class="modal">
     <div class="modal-box">
       <h3 class="text-lg font-bold mb-4">{{ $t('Contact_Merchant') }}</h3>
